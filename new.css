@@ -1,0 +1,307 @@
+/* mobile only */
+
+body {
+    min-width: 500px;
+    width: auto !important;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    /*    max-width: 1140px;*/
+
+}
+
+
+
+@media only screen and (min-device-width: 480px) {
+
+    #mainheader {
+        background-image: url(img/landscape-vineyard-edited.jpg);
+        background-size: cover;
+        height: 35rem;
+        max-height: 35rem;
+        width: 100%;
+    }
+
+    #wineheader {
+        min-height: 25rem;
+        background-image: url(img/header_3.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+/*        width: 100%;*/
+/*        height: auto;*/
+/*        height: 30rem;*/
+/*        max-height: 30rem;*/
+/*        width: auto;*/
+/*        object-fit: contain;*/
+/*        background-size: cover;*/
+    }
+
+    #logo {
+        padding: 1rem 2rem;
+        position: absolute;
+        top: 0;
+    }
+
+    nav {
+        display: inline-block;
+        position: absolute;
+        margin: 2rem -1rem;
+        top: 0;
+        left: 6rem;
+    }
+
+    nav ul {
+        display: inline-block;
+    }
+
+    nav li {
+        font-family: "La Belle Aurore", serif;
+        color: white;
+        list-style-type: none;
+        display: inline-block;
+        padding-right: 3rem;
+        font-size: 1.6rem;
+    }
+
+    #maintitle {
+        font-family: "La Belle Aurore", serif;
+        font-size: 4rem;
+        color: white;
+        position: absolute;
+        top: 18rem;
+        left: 3rem;
+    }
+
+    #mainsubtitle {
+        font-family: "Roboto Condensed", serif;
+        color: white;
+        position: absolute;
+        top: 23rem;
+        left: 25rem;
+    }
+
+    #winetitle {
+        font-family: "La Belle Aurore", serif;
+        font-size: 4rem;
+        color: white;
+/* padding: 8rem 0 0 4rem; */
+        position: absolute;
+        top: 10rem;
+        left: 6rem;
+    }
+
+    #winesubtitle {
+    font-family: "Roboto Condensed", serif;
+    color: white;
+    position: absolute;
+    top: 10rem;
+    left: 4rem;
+        /* margin-top: -2.8rem; */
+        /* margin-left: 24rem; */
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        grid-auto-rows: minmax(100px, auto);
+    }
+
+    h1 {
+        font-family: "La Belle Aurore", serif;
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-family: "La Belle Aurore", serif;
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-family: "Cormorant Garamond", sans-serif;
+        margin: 0;
+    }
+
+    hr {
+        width: 6.5rem;
+        margin-left: 0;
+        margin-top: -1.6rem;
+    }
+
+    .one {
+        grid-column: 1;
+        grid-row: 1;
+        align-self: center;
+        padding-left: 5%;
+    }
+    .two {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .three {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .four {
+        grid-column: 2;
+        grid-row: 2;
+        align-self: center;
+        padding-left: 5%;
+    }
+    .five {
+        grid-column: 1 / 3;
+        grid-row: 3;
+        text-align: center;
+        padding: 2rem 0;
+    }
+    .six {
+        grid-column: 1;
+        grid-row: 4;
+        align-self: center;
+        padding-left: 5%;
+    }
+    .seven {
+        grid-column: 2;
+        grid-row: 4;
+    }
+    .placeholder {
+        max-width: 100%;
+        object-fit: contain;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: inherit;
+    }
+
+
+
+
+    #winegrid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+        grid-auto-rows: minmax(100px, auto);
+        padding: 1rem;
+    }
+
+    .wineorigin {
+        grid-column: 1 / 4;
+    }
+
+    h3 {
+        font-family: "Roboto Condensed", serif;
+        font-size: 1.1rem;
+        margin: 0;
+    }
+
+    h4 {
+        font-family: "Cormorant Garamond", sans-serif;
+        margin: 0;
+    }
+
+    .wine {
+        text-align: center;
+        position: relative;
+    }
+
+    .winebottle {
+        max-height: 15rem;
+    }
+
+    .hidewine:hover {
+        opacity: 0.1;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+
+    .btn {
+        transition: .5s ease;
+         opacity: 0;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+    .wine:hover {
+        background-color: #CCD5BF;
+        transition: .5s ease;
+    }
+
+    .wine:hover .btn {
+        opacity: 1;
+    }
+
+    .btntext {
+        font-family: "Roboto Condensed", sans-serif;
+        color: white;
+        border: solid white;
+        padding: 0.2em 0.4em;
+    }
+
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+
+    .modal_content {
+        background-color: #fefefe;
+        margin: 25% auto;
+        padding: 1rem;
+        border: 1px solid white;
+        width: 70%;
+    }
+
+    .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .modal_content h4 {
+        padding-bottom: 0.5rem;
+    }
+    .modal_content p {
+        line-height: 1.5;
+    }
+
+    .rating {
+        font-size: 2.5rem;
+        font-family: "Roboto Condensed", serif;
+        padding-top: 3rem;
+    }
+
+    .modal_description p {
+        line-height: 1.3;
+        font-family: "Roboto Condensed", sans-serif;
+    }
+
+    .modal_description {
+    }
+
+    .modal_image {
+        max-height: 18rem;
+        float: right
+    }
+
+
+}
