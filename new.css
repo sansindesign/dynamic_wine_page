@@ -9,6 +9,7 @@ body {
     width: auto !important;
     margin: 0 auto;
     /*    max-width: 1140px;*/
+    background-color: #FCFCFC;
 
 }
 
@@ -34,6 +35,7 @@ body {
     padding: 1rem 2rem;
     position: absolute;
     top: 0;
+    width: 40px;
 }
 
 nav {
@@ -69,19 +71,20 @@ a {
 
 #indexTitle {
     font-family: "La Belle Aurore", serif;
-    font-size: 4rem;
+    font-size: 3rem;
     color: white;
     position: absolute;
-    top: 18rem;
-    left: 3rem;
+    top: 22rem;
+    left: 1rem;
 }
 
 #indexSubtitle {
     font-family: "Roboto Condensed", serif;
+    font-size: 1rem;
     color: white;
     position: absolute;
-    top: 23rem;
-    left: 25rem;
+    top: 26rem;
+    left: 12.5rem;
 }
 
 .indexMain {
@@ -90,7 +93,7 @@ a {
     grid-template-columns: 1fr;
 }
 
-.article-box{
+.article-box {
     display: block;
     text-align: center;
     padding: 10px;
@@ -101,11 +104,16 @@ a {
 .article-box h1 {
     font-family: "La Belle Aurore", serif;
     font-size: 1.8rem;
+    margin-top: 10px;
+    color: #313029;
 }
 
 .article-box .index-article {
     font-family: "Cormorant Garamond", sans-serif;
     padding: 5% 0;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    color: #313029;
 }
 
 hr {
@@ -126,15 +134,17 @@ hr {
     text-align: center;
 }
 
-.five{
+.five {
     background-color: #F5F7F2;
     height: 100%;
+    text-align: center;
 }
 
 .five .quote {
     font-family: "La Belle Aurore", serif;
     font-size: 1.6rem;
     padding: 10% 20px;
+    color: #313029;
 }
 
 /* INDEX PAGE ENDS HERE */
@@ -212,16 +222,17 @@ article .ratingImage {
 
 /* TABLET VIEW */
 @media only screen and (min-width: 600px) {
-    body {
-        background-color: lightblue;
-    }
+
 }
 
 
 /* DESKTOP VIEW */
 @media only screen and (min-width: 1300px) {
-    body {
-        background-color: lightgoldenrodyellow;
+
+    #logo {
+        padding: 1rem 2rem;
+        position: absolute;
+        width: 100px;
     }
 
     .indexMain {
@@ -232,12 +243,44 @@ article .ratingImage {
         grid-auto-rows: minmax(100px, auto);
     }
 
+    #indexTitle {
+        font-family: "La Belle Aurore", serif;
+        font-size: 6rem;
+        color: white;
+        position: absolute;
+        top: 35rem;
+        left: 9rem;
+    }
+
+    #indexSubtitle {
+        font-family: "Roboto Condensed", serif;
+        font-size: 1.6rem;
+        color: white;
+        position: absolute;
+        top: 43rem;
+        left: 38rem;
+    }
+
+    .article-box {
+        text-align: left;
+    }
+
+
+    .article-box h1 {
+        font-family: "La Belle Aurore", serif;
+        font-size: 2.4rem;
+        margin: 0;
+    }
+
+    .article-box .index-article {
+        font-size: 1.3rem;
+    line-height: 2rem;
+    }
+
     hr {
-    /* CREATES THE UNDERLINE FOR THE HEADERS */
-    width: 6.5rem;
-    margin-left: 0;
-    margin-top: -1.6rem;
-}
+        /* CREATES THE UNDERLINE FOR THE HEADERS */
+        margin: 0;
+    }
 
     .one {
         grid-column: 1;
@@ -267,7 +310,11 @@ article .ratingImage {
         grid-column: 1 / 3;
         grid-row: 3;
         text-align: center;
-        padding: 2rem 0;
+        background-color: #F5F7F2;
+    }
+
+    .five .quote {
+        font-size: 3rem;
     }
 
     .six {
