@@ -1,4 +1,5 @@
 const template = document.querySelector("#myTemp").content;
+let vh = window.innerHeight * 0.01;
 
 const productListLink = "https://spreadsheets.google.com/feeds/list/1s4CkxsGQ93Ro5fkyjGdEvRgaVLmF0CYVSIldWqDIcv0/od6/public/values?alt=json";
 
@@ -22,3 +23,7 @@ function displayWineData(product) {
 };
 
 loadJSON(productListLink)
+
+
+// Here I set the height for the gloabal --vh to match each vieport height
+document.documentElement.style.setProperty('--vh', `${vh}px`);
