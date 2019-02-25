@@ -278,6 +278,69 @@ footer {
 
     /* TABLET INDEX ENDS HERE */
 
+    /* TABLET WINE PAGE BEGINS HERE*/
+
+    #winetitle {
+        font-size: 2.7rem;
+        position: absolute;
+        top: 7.3rem;
+        left: 10.5rem;
+    }
+
+    #winesubtitle {
+        font-size: .9rem;
+        position: absolute;
+        top: 7rem;
+        left: 8rem;
+    }
+
+    #winegrid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 3rem;
+        grid-row-gap: 0;
+        grid-auto-rows: minmax(100px, auto);
+        width: 90%;
+        margin: 0 auto;
+    }
+
+
+    article {
+        width: 100%;
+        padding: 20px;
+    }
+
+    article .wineImage {
+        width: 50%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    article .name {
+        font-size: 1.2rem;
+        margin-top: 5px;
+    }
+
+    article .wineHouse {
+        font-size: .9em;
+        margin-top: 4px;
+    }
+
+    article .area {
+        font-size: .9rem;
+    }
+
+    article .rating {
+        font-size: 2rem;
+        margin: 10px 0 5px 0;
+    }
+
+    article .ratingImage {
+        width: 40%;
+    }
+
+    /* DESKTOP WINE PAGE ENDS HERE*/
+
     /* TABLET FOOTER STARTS HERE */
 
     footer {
@@ -305,7 +368,7 @@ footer {
     #logo {
         padding: 1rem 2rem;
         position: absolute;
-        width: 100px;
+        width: 40px;
     }
 
     /* DESKTOP INDEX STARTS HERE */
@@ -314,7 +377,6 @@ footer {
         /* THIS IS THE GRID FOR THE INDEX PAGE */
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 10px;
         grid-auto-rows: minmax(100px, auto);
     }
 
@@ -339,13 +401,14 @@ footer {
 
     .article-box h1 {
         font-family: "La Belle Aurore", serif;
-        font-size: 2.4rem;
+        font-size: 2.6rem;
         margin: 0;
     }
 
     .article-box .index-article {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         line-height: 2rem;
+        padding: 5% 2rem 5% 0;
     }
 
     hr {
@@ -413,14 +476,15 @@ footer {
     #winetitle {
         font-size: 4rem;
         position: absolute;
-        top: 10rem;
-        left: 6rem;
+        top: 8.5rem;
+        left: 38rem;
     }
 
     #winesubtitle {
+        font-size: 1em;
         position: absolute;
-        top: 10rem;
-        left: 4rem;
+        top: 8rem;
+        left: 33rem;
     }
 
     #winegrid {
@@ -429,43 +493,40 @@ footer {
         grid-gap: 1rem;
         grid-auto-rows: minmax(100px, auto);
         width: 85%;
-        margin: 0 auto;
+        margin: 60px auto;
     }
 
 
     article {
-        width: 100%;
-        padding: 20px;
+        width: 80%;
+        padding: 30px;
     }
 
     article .wineImage {
         width: 50%;
-        margin: 0 auto;
+        margin: 0 auto 20px auto;
         display: block;
     }
 
     article .name {
-        font-family: 'Roboto Condensed', sans-serif;
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         font-weight: 400;
         margin-top: 5px;
     }
 
     article .wineHouse {
-        font-family: 'Roboto Slab', serif;
-        font-size: 1em;
+        font-size: 1.1em;
         font-weight: 100;
         margin-top: 4px;
     }
 
     article .area {
-        font-family: 'Roboto Slab', serif;
-        font-size: 1rem;
+        font-size: 1.1rem;
         font-weight: 100;
+        margin-top: 1px;
     }
 
     article .rating {
-        font-family: 'Roboto Condensed', sans-serif;
         font-size: 2rem;
         margin: 40px 0 5px 0;
     }
