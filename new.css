@@ -146,7 +146,7 @@ hr {
 #wineheader {
     height: 30vh;
     height: calc(var(--vh, 1vh) *30);
-    background-image: url(img/header_3.png);
+    background-image: url(img/house-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -224,7 +224,7 @@ article .ratingImage {
 /* ABOUT PAGE STARTS HERE */
 
 #aboutheader {
-    background-image: url(img/intro-bg.jpg);
+    background-image: url(img/house-bg.png);
     background-size: cover;
     height: 100vh;
     height: calc(var(--vh, 1vh) *100);
@@ -376,9 +376,9 @@ footer {
         width: 40%;
     }
 
-    /* DESKTOP WINE PAGE ENDS HERE*/
+    /* TABLET WINE PAGE ENDS HERE*/
 
-    /* ABOUT PAGE STARTS HERE */
+    /* TABLET ABOUT PAGE STARTS HERE */
 
     .about-me-box {
         width: 70%;
@@ -397,7 +397,7 @@ footer {
     }
 
 
-    /* ABOUT PAGE ENDS HERE */
+    /* TABLET ABOUT PAGE ENDS HERE */
 
     /* TABLET FOOTER STARTS HERE */
 
