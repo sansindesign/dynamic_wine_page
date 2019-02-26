@@ -146,7 +146,7 @@ hr {
 #wineheader {
     height: 30vh;
     height: calc(var(--vh, 1vh) *30);
-    background-image: url(img/house-bg.png);
+    background-image: url(img/about-me-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -269,7 +269,7 @@ article .ratingImage {
 /* ABOUT PAGE STARTS HERE */
 
 #aboutheader {
-    background-image: url(img/house-bg.png);
+    background-image: url(img/about-me-bg.png);
     background-size: cover;
     height: 100vh;
     height: calc(var(--vh, 1vh) *100);
