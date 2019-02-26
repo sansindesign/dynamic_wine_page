@@ -10,6 +10,10 @@
 </head>
 
 <body>
+
+
+
+
     <header>
         <div id="wineheader"></div>
         <img src="img/sb_logo.svg" alt="" id="logo">
@@ -27,42 +31,34 @@
     </main>
 
     <footer>
-        <p class="footer_1p">Drink Responsobly.</p>
+        <p class="footer_1p">Drink Responsibly.</p>
         <p class="footer_2p">Terms of use | Privacy policy </p>
     </footer>
 
     <template id="myTemp">
         <article>
-            <img class="wineImage" src="" alt="">
-            <p class="name">HERE GOES THE WINE NAME</p>
-            <p class="wineHouse">HERE GOES THE WINE HOUSE NAME</p>
-            <p class="area">HERE GOES THE WINE MAKING AREA</p>
-            <p class="rating">HERE GOES THE RATING NUMBER</p>
-            <img class="ratingImage" src="" alt="">
+            <button class="wineWrapper" id="myBtn">
+                <img class="wineImage opacity" src="" alt="">
+                <p class="name opacity">HERE GOES THE WINE NAME</p>
+                <p class="wineHouse opacity">HERE GOES THE WINE HOUSE NAME</p>
+                <p class="area opacity">HERE GOES THE WINE MAKING AREA</p>
+                <p class="rating opacity">HERE GOES THE RATING NUMBER</p>
+                <img class="ratingImage opacity" src="" alt="">
+            </button>
+
+            <div class="modal" id="myModal">
+                <div class="modalcontent">
+                    <span class="close">&times;</span>
+                    <p class="wineDescription">WINE DESCRIPTION</p>
+                </div>
+            </div>
+
+
         </article>
     </template>
 
-    <script>
-        var btn = document.getElementById("myBtn");
-        var modal = document.getElementById("myModal");
-        var span = document.getElementsByClassName("close")[0];
-
-        btn.onclick = function() {
-            modal.style.display = "block";
-        }
-
-        span.onclick = function() {
-            modal.style.display = "none";
-        }
-
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
-
     <script src="new.js"></script>
+
 </body>
 
 </html>

@@ -219,6 +219,51 @@ article .ratingImage {
     width: 30%;
 }
 
+
+/*MODAL BEGINS HERE*/
+
+/*background modal*/
+.modal {
+  display: none;/* hidden to start */
+  position: fixed;
+  z-index: 1; /* on top of z-ax */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0);  /*Fallback color*/
+  background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modalcontent {
+  background-color: #fefefe;
+  margin: 20% auto; /*20% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+    padding: .5rem 1rem;
+    margin: -1rem;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*MODAL ENDS HERE */
+
+
 /* WINE PAGE ENDS HERE*/
 
 /* ABOUT PAGE STARTS HERE */
@@ -638,4 +683,20 @@ footer {
     }
 
     /* DESKTOP FOOTER STARTS HERE */
+}
+
+.wineWrapper {
+    background-color: transparent;
+    border: none;
+    text-decoration: none;}
+
+.wineWrapper:hover {
+    background-color: #CCD5BF;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.wineWrapper:hover .opacity {
+    opacity: 0.3;
+    transition: .5s ease;
 }

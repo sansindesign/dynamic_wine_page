@@ -7,11 +7,12 @@ function loadJSON(link) {
     console.log(link);
     fetch(link).then(e=>e.json()).then(data=>data.feed.entry.forEach(displayWineData))
 }
-
+let count=0;
 function displayWineData(product) {
-    console.log(product)
-    //const section = document.querySelector("#" + product.category)
+//    console.log(product)
+//    const section = document.querySelector("#" + product.category)
     let clone = template.cloneNode(true);
+    clone.querySelector(".wineWrapper", "#myBtn").id+=count;
     clone.querySelector(".wineImage").src = product.gsx$wineimage.$t;
     //clone.querySelector("img").alt = product.image;
     clone.querySelector(".name").textContent = product.gsx$name.$t;
@@ -19,7 +20,21 @@ function displayWineData(product) {
     clone.querySelector(".area").textContent = product.gsx$region.$t;
     clone.querySelector(".rating").textContent = product.gsx$rating.$t;
     clone.querySelector(".ratingImage").src = product.gsx$ratingimage.$t;
-    document.querySelector("#winegrid").appendChild(clone)
+    clone.querySelector(".modal", "#myModal");
+    clone.querySelector(".modalcontent");
+    clone.querySelector(".close");
+    clone.querySelector(".wineDescription").textContent = product.gsx$description.$t;
+   clone.querySelector(".wineWrapper", "#myBtn"+count).onclick=  function(e) {
+
+     this.nextElementSibling.style.display = "block";
+        }
+
+clone.querySelector(".close").onclick = function() {
+  this.parentNode.parentNode.style.display = "none";
+}
+  document.querySelector("#winegrid").appendChild(clone)
+
+   count++;
 };
 
 loadJSON(productListLink)
@@ -27,3 +42,13 @@ loadJSON(productListLink)
 
 // Here I set the height for the gloabal --vh to match each vieport height
 document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+
+
+//
+//template.onclick = function() {
+//    modal.style.display = "block";
+//}
+
+
+
