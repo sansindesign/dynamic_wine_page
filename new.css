@@ -170,12 +170,21 @@ hr {
     left: 3.5rem;
 }
 
+.wineCountry{
+    font-family: "La Belle Aurore", serif;
+    font-size: 2.4rem;
+    color: #313029;
+    width: 70%;
+    margin: 20px auto 0 auto;
+    text-align: center;
+}
+
 #winegrid {
     display: grid;
     grid-template-columns: 1fr;
     grid-row-gap: 40px;
     width: 70%;
-    margin: 20px auto;
+    margin: 0 auto;
 }
 
 
@@ -375,6 +384,13 @@ footer {
         top: 7rem;
         left: 8rem;
     }
+
+    .wineCountry{
+    font-size: 2.5rem;
+    width: 80%;
+    margin: 20px auto 0 auto;
+    text-align: left;
+}
 
     #winegrid {
         display: grid;
@@ -590,13 +606,18 @@ footer {
         left: 33rem;
     }
 
+    .wineCountry{
+    font-size: 3rem;
+    width: 75%;
+}
+
     #winegrid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 1rem;
         grid-auto-rows: minmax(100px, auto);
         width: 85%;
-        margin: 60px auto;
+        margin: 0px auto;
     }
 
 
