@@ -10,9 +10,25 @@ function loadJSON(link) {
 let count=0;
 function displayWineData(product) {
 //    console.log(product)
-    //const section = document.querySelector("." + product.category)
-
-    const section = document.querySelector("."+product.gsx$country.$t);
+//    const section = document.querySelector("#" + product.category)
+    if(product.category==="france"){
+        document.querySelector(".france").appendChild(clone);
+    } else if (product.category==="italy"){
+        document.querySelector(".italy").appendChild(clone);
+    };
+    if (product.category==="spain"){
+       document.querySelector(".spain").appendChild(clone);
+   };
+   if (product.category==="newZealand"){
+      document.querySelector(".newZealand").appendChild(clone);
+    };
+    if (product.category==="usa"){
+     document.querySelector(".usa").appendChild(clone);
+        };
+    if (product.category==="usa"){
+     document.querySelector(".usa").appendChild(clone);
+        };
+  //  document.querySelector("."+product.gsx$country.$t);
 
     let clone = template.cloneNode(true);
     clone.querySelector(".wineWrapper", "#myBtn").id+=count;
@@ -35,8 +51,7 @@ function displayWineData(product) {
 clone.querySelector(".close").onclick = function() {
   this.parentNode.parentNode.style.display = "none";
 }
-  //document.querySelector("#winegrid").appendChild(clone)
-  section.appendChild(clone)
+  document.querySelector("#winegrid").appendChild(clone)
 
    count++;
 };
