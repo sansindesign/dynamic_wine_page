@@ -30,32 +30,47 @@ body {
     width: 40px;
 }
 
-nav {
-    display: inline-block;
+/* BURGER MENU BEGINS */
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
     position: absolute;
-    margin: 2rem -1rem;
     top: 0;
-    left: 6rem;
+    right: 0;
+    margin-right: 1em;
+    height: 15vh;
+    display: flex;
+    align-items: center;
 }
 
-nav ul {
-    display: inline-block;
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    display: block;
+    background: white;
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
 }
 
-nav li {
-    font-family: "La Belle Aurore", serif;
-    color: white;
-    list-style-type: none;
-    display: inline-block;
-    padding-right: 3rem;
-    font-size: 1.6rem;
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    content: '';
+    position: absolute;
 }
 
-
-a {
-    color: inherit;
-    text-decoration: inherit;
+.nav-toggle-label span::before {
+    bottom: 7px;
 }
+
+.nav-toggle-label span::after {
+    top: 7px;
+}
+
+/* BURGER MENU ENDS */
 
 /* HEADER ENDS*/
 
@@ -170,7 +185,7 @@ hr {
     left: 3.5rem;
 }
 
-.wineCountry{
+.wineCountry {
     font-family: "La Belle Aurore", serif;
     font-size: 2.4rem;
     color: #313029;
@@ -233,41 +248,50 @@ article .ratingImage {
 
 /*background modal*/
 .modal {
-  display: none;/* hidden to start */
-  position: fixed;
-  z-index: 1; /* on top of z-ax */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0);  /*Fallback color*/
-  background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+    display: none;
+    /* hidden to start */
+    position: fixed;
+    z-index: 1;
+    /* on top of z-ax */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /*Fallback color*/
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Black w/ opacity */
 }
 
 /* Modal Content/Box */
 .modalcontent {
-  background-color: #fefefe;
-  margin: 20% auto; /*20% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 50%; /* Could be more or less, depending on screen size */
+    background-color: #fefefe;
+    margin: 20% auto;
+    /*20% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    /* Could be more or less, depending on screen size */
 }
 
 .close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
     padding: .5rem 1rem;
     margin: -1rem;
 }
 
 .close:hover,
 .close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 /*MODAL ENDS HERE */
@@ -339,6 +363,36 @@ footer {
 @media only screen and (min-width: 600px) {
 
 
+    /* TABLET NAVIGATION STARTS HERE */
+
+    .nav-toggle-label {
+        display: none;
+    }
+
+    nav {}
+
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+    }
+
+    nav ul li {
+        margin-bottom: 1em;
+        margin-left: 1em;
+    }
+
+
+    nav a {
+        font-family: "La Belle Aurore", serif;
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+
+
+    /* TABLET NAVIGATION ENDS HERE */
+
     /* TABLET INDEX STARTS HERE */
 
     #indexTitle {
@@ -385,12 +439,12 @@ footer {
         left: 8rem;
     }
 
-    .wineCountry{
-    font-size: 2.5rem;
-    width: 80%;
-    margin: 20px auto 0 auto;
-    text-align: left;
-}
+    .wineCountry {
+        font-size: 2.5rem;
+        width: 80%;
+        margin: 20px auto 0 auto;
+        text-align: left;
+    }
 
     #winegrid {
         display: grid;
@@ -592,7 +646,7 @@ footer {
 
     /* DESKTOP WINE PAGE BEGINS HERE*/
 
-       #winetitle {
+    #winetitle {
         font-size: 4rem;
         position: absolute;
         top: 8.5rem;
@@ -606,10 +660,10 @@ footer {
         left: 33rem;
     }
 
-    .wineCountry{
-    font-size: 3rem;
-    width: 75%;
-}
+    .wineCountry {
+        font-size: 3rem;
+        width: 75%;
+    }
 
     #winegrid {
         display: grid;
@@ -669,7 +723,7 @@ footer {
         left: 26rem
     }
 
-    .about-me-box hr{
+    .about-me-box hr {
         margin: 0 auto;
     }
 
@@ -703,13 +757,59 @@ footer {
         margin-top: 18px;
     }
 
-    /* DESKTOP FOOTER STARTS HERE */
+    /* DESKTOP FOOTER ENDS HERE */
+}
+
+
+@media only screen and (max-width: 600px) {
+    nav {
+        display: inline-block;
+        position: absolute;
+        top: 5rem;
+        right: 0rem;
+        background: #ADC4CC;
+        opacity: .7;
+        width: 100%;
+        transform: scale(1, 0);
+        transform-origin: top;
+        transition: transform 400ms ease-in-out;
+    }
+
+    nav ul {
+        list-style: none;
+    }
+
+    nav ul li {
+        margin-bottom: 1em;
+        margin-left: 1em;
+    }
+
+
+    nav a {
+        font-family: "La Belle Aurore", serif;
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+        opacity: 0;
+        transition: opacity 150ms ease-in-out;
+    }
+
+    .nav-toggle:checked ~ nav {
+        transform: scale(1, 1);
+    }
+
+    .nav-toggle:checked ~ nav a {
+        opacity: 1;
+        transition: opacity 250ms ease-in-out 400ms;
+    }
+
 }
 
 .wineWrapper {
     background-color: transparent;
     border: none;
-    text-decoration: none;}
+    text-decoration: none;
+}
 
 .wineWrapper:hover {
     background-color: #CCD5BF;
