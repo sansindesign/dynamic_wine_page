@@ -222,7 +222,21 @@ article .name {
     margin-top: 5px;
 }
 
+.modalname {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
 article .wineHouse {
+    font-family: 'Roboto Slab', serif;
+    font-size: .9em;
+    font-weight: 100;
+    margin-top: 4px;
+}
+
+.modalhouse {
     font-family: 'Roboto Slab', serif;
     font-size: .9em;
     font-weight: 100;
@@ -235,7 +249,24 @@ article .area {
     font-weight: 100;
 }
 
+.modalarea {
+    font-family: 'Roboto Slab', serif;
+    font-size: .9rem;
+    font-weight: 100;
+}
+
+.modaldescription {
+    padding: 1rem 0 0 0;
+    font-size: .8rem
+}
+
 article .rating {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2rem;
+    margin: 10px 0 5px 0;
+}
+
+.modalrating {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 2rem;
     margin: 10px 0 5px 0;
@@ -243,6 +274,10 @@ article .rating {
 
 article .ratingImage {
     width: 30%;
+}
+
+.modalratingimg {
+    width: 6rem;
 }
 
 
@@ -272,12 +307,10 @@ article .ratingImage {
 /* Modal Content/Box */
 .modalcontent {
     background-color: #fefefe;
-    margin: 20% auto;
-    /*20% from the top and centered */
+    margin: 25vh auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 50%;
-    /* Could be more or less, depending on screen size */
+    width: 70vw;
 }
 
 .close {
@@ -481,7 +514,23 @@ footer {
         margin-top: 5px;
     }
 
+    .modalcontent {
+/*        width: 50%;*/
+    }
+
+    .modalname {
+        font-size: 1.2rem;
+        margin-top: 5px;
+    }
+
     article .wineHouse {
+        font-size: .9em;
+        margin-top: 4px;
+    }
+
+
+
+    .modalhouse {
         font-size: .9em;
         margin-top: 4px;
     }
@@ -490,13 +539,30 @@ footer {
         font-size: .9rem;
     }
 
+    .modalarea {
+        font-size: .9rem;
+    }
+
+    .modaldescription {
+        font-size: .9rem;
+    }
+
     article .rating {
+        font-size: 2rem;
+        margin: 10px 0 5px 0;
+    }
+
+    .modalrating {
         font-size: 2rem;
         margin: 10px 0 5px 0;
     }
 
     article .ratingImage {
         width: 40%;
+    }
+
+    .modalratingimg {
+/*        width: 40%;*/
     }
 
     /* TABLET WINE PAGE ENDS HERE*/
@@ -694,7 +760,24 @@ footer {
         margin-top: 5px;
     }
 
+    .modalcontent {
+        width: 60vw;
+    }
+
+    .modalname {
+        font-size: 1.4rem;
+        font-weight: 400;
+        margin-top: 5px;
+    }
+
     article .wineHouse {
+        font-size: 1.1rem;
+        font-weight: 100;
+        margin-top: 4px;
+    }
+
+
+    .modalhouse {
         font-size: 1.1rem;
         font-weight: 100;
         margin-top: 4px;
@@ -706,13 +789,32 @@ footer {
         margin-top: 1px;
     }
 
+    .modalarea {
+        font-size: 1.1rem;
+        font-weight: 100;
+        margin-top: 1px;
+    }
+
+    .modaldescription {
+        font-size: 1.0rem;
+    }
+
     article .rating {
+        font-size: 2rem;
+        margin: 40px 0 5px 0;
+    }
+
+    .modalrating {
         font-size: 2rem;
         margin: 40px 0 5px 0;
     }
 
     article .ratingImage {
         width: 30%;
+    }
+
+    .modalratingimg {
+/*        width: 30%;*/
     }
 
     /* DESKTOP WINE PAGE ENDS HERE*/

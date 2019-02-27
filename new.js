@@ -23,10 +23,18 @@ function displayWineData(product) {
     clone.querySelector(".area").textContent = product.gsx$region.$t;
     clone.querySelector(".rating").textContent = product.gsx$rating.$t;
     clone.querySelector(".ratingImage").src = product.gsx$ratingimage.$t;
+
     clone.querySelector(".modal", "#myModal");
     clone.querySelector(".modalcontent");
     clone.querySelector(".close");
-    clone.querySelector(".wineDescription").textContent = product.gsx$description.$t;
+    clone.querySelector(".modalname").textContent = product.gsx$name.$t;
+    clone.querySelector(".modalhouse").textContent = product.gsx$house.$t;
+    clone.querySelector(".modalarea").textContent = product.gsx$region.$t;
+    clone.querySelector(".modalrating").textContent = product.gsx$rating.$t;
+    clone.querySelector(".modalratingimg").src = product.gsx$ratingimage.$t;
+    clone.querySelector(".modaldescription").textContent = product.gsx$description.$t;
+
+
    clone.querySelector(".wineWrapper", "#myBtn"+count).onclick=  function(e) {
 
      this.nextElementSibling.style.display = "block";
