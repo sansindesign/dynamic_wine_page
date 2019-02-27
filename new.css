@@ -24,10 +24,9 @@ body {
 }
 
 #logo {
-    padding: rem;
     position: absolute;
     top: 0;
-    padding: 1.7em 1.5em ;
+    padding: 1.7em 1.5em;
     width: 2.6em;
     z-index: 2;
 }
@@ -365,6 +364,10 @@ footer {
 /* TABLET VIEW */
 @media only screen and (min-width: 600px) {
 
+    #logo {
+        width: 3em;
+    }
+
 
     /* TABLET NAVIGATION STARTS HERE */
 
@@ -372,27 +375,29 @@ footer {
         display: none;
     }
 
-    nav {}
-
     nav ul {
         display: flex;
-        justify-content: flex-end;
+        justify-content: flex-start;
         list-style: none;
+        height: 110px;
+        padding-left: 6rem
     }
 
-    nav ul li {
-        margin-bottom: 1em;
-        margin-left: 1em;
-    }
+    nav ul li {}
 
 
     nav a {
         font-family: "La Belle Aurore", serif;
         color: white;
         text-decoration: none;
-        font-size: 1.2rem;
+        font-size: 1.7rem;
+        line-height: 110px;
+        padding: 0 .7em;
     }
 
+    .vertical-line {
+        border-left: 2px white solid;
+    }
 
     /* TABLET NAVIGATION ENDS HERE */
 
@@ -540,12 +545,6 @@ footer {
 
 /* DESKTOP VIEW */
 @media only screen and (min-width: 1300px) {
-
-    #logo {
-        padding: 1rem 2rem;
-        position: absolute;
-        width: 40px;
-    }
 
     /* DESKTOP INDEX STARTS HERE */
 
