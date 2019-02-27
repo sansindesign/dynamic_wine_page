@@ -10,7 +10,10 @@ function loadJSON(link) {
 let count=0;
 function displayWineData(product) {
 //    console.log(product)
-//    const section = document.querySelector("#" + product.category)
+    //const section = document.querySelector("." + product.category)
+
+    const section = document.querySelector("."+product.gsx$country.$t);
+
     let clone = template.cloneNode(true);
     clone.querySelector(".wineWrapper", "#myBtn").id+=count;
     clone.querySelector(".wineImage").src = product.gsx$wineimage.$t;
@@ -32,7 +35,8 @@ function displayWineData(product) {
 clone.querySelector(".close").onclick = function() {
   this.parentNode.parentNode.style.display = "none";
 }
-  document.querySelector("#winegrid").appendChild(clone)
+  //document.querySelector("#winegrid").appendChild(clone)
+  section.appendChild(clone)
 
    count++;
 };
@@ -49,6 +53,3 @@ document.documentElement.style.setProperty('--vh', `${vh}px`);
 //template.onclick = function() {
 //    modal.style.display = "block";
 //}
-
-
-
