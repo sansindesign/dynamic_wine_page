@@ -24,10 +24,11 @@ body {
 }
 
 #logo {
-    padding: 1rem;
+    padding: rem;
     position: absolute;
     top: 0;
-    width: 40px;
+    padding: 1.7em 1.5em ;
+    width: 2.6em;
     z-index: 2;
 }
 
