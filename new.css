@@ -774,7 +774,7 @@ footer {
         height: 100vh;
         transform: scale(1, 0);
         transform-origin: top;
-        transition: transform 400ms ease-in-out;
+        transition: transform 500ms ease-in-out;
         z-index: 1;
     }
 
@@ -783,11 +783,11 @@ footer {
         text-align: center;
         height: 100%;
         display: flex;
-  flex-direction: column;
-  justify-content: center;
+        flex-direction: column;
+        justify-content: center;
     }
 
-    nav li{
+    nav li {
         margin: 1.7rem 0;
     }
 
