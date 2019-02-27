@@ -30,7 +30,7 @@
         <div id="winetitle">Sauvignon Blanc</div>
         <div id="winesubtitle">Delve into the world of</div>
     </header>
-    <main>
+    <main id="main">
         <div class="wineMenu">
             <h1 class="wineCountry">France</h1>
             <section class="france" id="winegrid"></section>
@@ -85,16 +85,24 @@
                 <div class="modalcontent">
                     <span class="close">&times;</span>
                    <p class="modalname">WINE NAME</p>
+<!--                   <img src="" alt="" class="modalwineimg">-->
                    <p class="modalhouse">WINE HOUSE</p>
                    <p class="modalarea">WINE AREA</p>
                     <p class="modaldescription">WINE DESCRIPTION</p>
-                    <p class="modalrating">RATING</p>
+                   <p class="modalrating">RATING</p>
+
+                   <div class="inlineblock">
+
                     <img src="" alt="" class="modalratingimg">
+
                     <div class="specs">
                         <p class="acidity">ACIDITY</p>
-                        <p class="abv">ALCOHOL PERCENTAGE</p>
+                        <p class="abv">ALCOHOL</p>
                         <p class="cost">PRICE</p>
                     </div>
+
+                    </div>
+
                 </div>
             </div>
 
@@ -102,7 +110,7 @@
         </article>
     </template>
 
-    <script src="new.js"></script>
+    <script defer src="new.js"></script>
 
 </body>
 

@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 
 body {
     min-width: 100vw;
@@ -94,6 +98,20 @@ body {
     position: absolute;
     top: 26rem;
     left: 12.5rem;
+}
+
+#scrollwrap {
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto 0 auto;
+    width: 100%;
+    color: white;
+    font-size: 5rem;
+    text-align: center;
+}
+
+.scrollbutton {
+    width: 5vw;
 }
 
 .indexMain {
@@ -229,6 +247,10 @@ article .name {
     margin-top: 5px;
 }
 
+.modalwineimg {
+        display: none;
+}
+
 article .wineHouse {
     font-family: 'Roboto Slab', serif;
     font-size: .9em;
@@ -272,6 +294,14 @@ article .rating {
     margin: 10px 0 5px 0;
 }
 
+.specs {
+    padding-top: 1rem;
+}
+
+.inlineblock {
+    display: inline-block;
+}
+
 article .ratingImage {
     width: 30%;
 }
@@ -279,6 +309,11 @@ article .ratingImage {
 .modalratingimg {
     width: 6rem;
 }
+
+    .specs p {
+        font-family: "Roboto Condensed", serif;
+        font-weight: 100;
+    }
 
 
 /*MODAL BEGINS HERE*/
@@ -523,6 +558,10 @@ footer {
         margin-top: 5px;
     }
 
+    .modalwineimg {
+        display: block;
+    }
+
     article .wineHouse {
         font-size: .9em;
         margin-top: 4px;
@@ -564,6 +603,12 @@ footer {
     .modalratingimg {
 /*        width: 40%;*/
     }
+
+    .specs {
+    float: right;
+    margin: -3.5rem 0 0 5rem;
+    }
+
 
     /* TABLET WINE PAGE ENDS HERE*/
 
@@ -929,3 +974,22 @@ footer {
     opacity: 0.3;
     transition: .5s ease;
 }
+
+
+
+
+
+#main {
+    opacity: 1;
+    animation: fadein 2s ease;
+}
+@keyframes fadein {
+  from { opacity: 0}
+  to   { opacity: 1}
+}
+*/
+*/
+
+
+
+

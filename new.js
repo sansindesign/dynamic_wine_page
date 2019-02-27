@@ -29,10 +29,14 @@ function displayWineData(product) {
     clone.querySelector(".close");
     clone.querySelector(".modalname").textContent = product.gsx$name.$t;
     clone.querySelector(".modalhouse").textContent = product.gsx$house.$t;
+//    clone.querySelector(".modalwineimg").src = product.gsx$wineimage.$t;
     clone.querySelector(".modalarea").textContent = product.gsx$region.$t;
     clone.querySelector(".modalrating").textContent = product.gsx$rating.$t;
     clone.querySelector(".modalratingimg").src = product.gsx$ratingimage.$t;
     clone.querySelector(".modaldescription").textContent = product.gsx$description.$t;
+    clone.querySelector(".acidity").textContent = product.gsx$acidity.$t+" in acidity";
+    clone.querySelector(".abv").textContent = "there is "+product.gsx$alcoholprecentage.$t+" alcohol";
+    clone.querySelector(".cost").textContent = product.gsx$price.$t+" dkk is the average price";
 
 
    clone.querySelector(".wineWrapper", "#myBtn"+count).onclick=  function(e) {
@@ -54,10 +58,3 @@ loadJSON(productListLink)
 
 // Here I set the height for the gloabal --vh to match each vieport height
 document.documentElement.style.setProperty('--vh', `${vh}px`);
-
-
-
-//
-//template.onclick = function() {
-//    modal.style.display = "block";
-//}
