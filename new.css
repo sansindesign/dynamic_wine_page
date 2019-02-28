@@ -243,6 +243,7 @@ article .wineImage {
     display: block;
 }
 
+
 article .name {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 1.1rem;
@@ -1010,6 +1011,10 @@ footer {
     text-decoration: none;
     padding: 1em;
     border-radius: 10px;
+    background-image: url(img/button/read_more.png);
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .wineWrapper:hover {
