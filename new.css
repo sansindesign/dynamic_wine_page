@@ -101,7 +101,6 @@ body {
 }
 
 #scrollwrap {
-    position: absolute;
     bottom: 0;
     margin: 0 auto .5em auto;
     width: 100%;
