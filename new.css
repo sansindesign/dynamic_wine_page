@@ -289,7 +289,8 @@ article .area {
 
 .modaldescription {
     padding: 1rem 0 0 0;
-    font-size: .8rem
+    font-size: .8rem;
+    line-height: 1.6rem;
 }
 
 article .rating {
@@ -352,7 +353,7 @@ article .ratingImage {
 /* Modal Content/Box */
 .modalcontent {
     background-color: #fefefe;
-    margin: 25vh auto;
+    margin: 20vh auto;
     padding: 20px;
     border: 1px solid #888;
     width: 70vw;
@@ -569,6 +570,8 @@ footer {
 
     .modalcontent {
         /*        width: 50%;*/
+        width: 60vw;
+
     }
 
     .modalname {
@@ -578,6 +581,9 @@ footer {
 
     .modalwineimg {
         display: block;
+        max-height: 25vh;
+        float: right;
+        height: 14rem;
     }
 
     article .wineHouse {

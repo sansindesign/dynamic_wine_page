@@ -29,14 +29,14 @@ function displayWineData(product) {
     clone.querySelector(".close");
     clone.querySelector(".modalname").textContent = product.gsx$name.$t;
     clone.querySelector(".modalhouse").textContent = product.gsx$house.$t;
-//    clone.querySelector(".modalwineimg").src = product.gsx$wineimage.$t;
+    clone.querySelector(".modalwineimg").src = product.gsx$wineimage.$t;
     clone.querySelector(".modalarea").textContent = product.gsx$region.$t;
     clone.querySelector(".modalrating").textContent = product.gsx$rating.$t;
     clone.querySelector(".modalratingimg").src = product.gsx$ratingimage.$t;
     clone.querySelector(".modaldescription").textContent = product.gsx$description.$t;
-    clone.querySelector(".acidity").textContent = product.gsx$acidity.$t+" in acidity";
-    clone.querySelector(".abv").textContent = "there is "+product.gsx$alcoholprecentage.$t+" alcohol";
-    clone.querySelector(".cost").textContent = product.gsx$price.$t+" dkk is the average price";
+    clone.querySelector(".acidity").textContent = "acidity: "+product.gsx$acidity.$t;
+    clone.querySelector(".abv").textContent = "alcohol: "+product.gsx$alcoholprecentage.$t;
+    clone.querySelector(".cost").textContent = "average price: "+product.gsx$price.$t+"dkk";
 
 
    clone.querySelector(".wineWrapper", "#myBtn"+count).onclick=  function(e) {
