@@ -4,7 +4,7 @@
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 
@@ -103,15 +103,26 @@ body {
 #scrollwrap {
     position: absolute;
     bottom: 0;
-    margin: 0 auto 0 auto;
+    margin: 0 auto .5em auto;
     width: 100%;
     color: white;
-    font-size: 5rem;
+    font-size: 1rem;
     text-align: center;
+    animation: MoveUpDown 1s linear infinite;
+  position: absolute;
 }
 
 .scrollbutton {
-    width: 5vw;
+    width: 1em;
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 10px;
+  }
 }
 
 .indexMain {
@@ -248,7 +259,7 @@ article .name {
 }
 
 .modalwineimg {
-        display: none;
+    display: none;
 }
 
 article .wineHouse {
@@ -310,10 +321,10 @@ article .ratingImage {
     width: 6rem;
 }
 
-    .specs p {
-        font-family: "Roboto Condensed", serif;
-        font-weight: 100;
-    }
+.specs p {
+    font-family: "Roboto Condensed", serif;
+    font-weight: 100;
+}
 
 
 /*MODAL BEGINS HERE*/
@@ -485,6 +496,14 @@ footer {
         left: 24rem;
     }
 
+    #scrollwrap {
+        margin: 0 auto .7em auto;
+    }
+
+    .scrollbutton {
+        width: 1.3em;
+    }
+
     .article-box .index-article {
         padding: 3% 10%;
         font-size: 1.1rem;
@@ -550,7 +569,7 @@ footer {
     }
 
     .modalcontent {
-/*        width: 50%;*/
+        /*        width: 50%;*/
     }
 
     .modalname {
@@ -601,12 +620,12 @@ footer {
     }
 
     .modalratingimg {
-/*        width: 40%;*/
+        /*        width: 40%;*/
     }
 
     .specs {
-    float: right;
-    margin: -3.5rem 0 0 5rem;
+        float: right;
+        margin: -3.5rem 0 0 5rem;
     }
 
 
@@ -678,6 +697,14 @@ footer {
         position: absolute;
         top: 43rem;
         left: 38rem;
+    }
+
+    #scrollwrap {
+        margin: 0 auto 1em auto;
+    }
+
+    .scrollbutton {
+        width: 1.4em;
     }
 
     .article-box {
@@ -859,7 +886,7 @@ footer {
     }
 
     .modalratingimg {
-/*        width: 30%;*/
+        /*        width: 30%;*/
     }
 
     /* DESKTOP WINE PAGE ENDS HERE*/
@@ -923,6 +950,8 @@ footer {
         transform-origin: top;
         transition: transform 500ms ease-in-out;
         z-index: 1;
+        overflow-y: auto;
+        position: fixed;
     }
 
     nav ul {
@@ -962,6 +991,7 @@ footer {
     background-color: transparent;
     border: none;
     text-decoration: none;
+    padding: 1em;
 }
 
 .wineWrapper:hover {
@@ -983,13 +1013,15 @@ footer {
     opacity: 1;
     animation: fadein 2s ease;
 }
+
 @keyframes fadein {
-  from { opacity: 0}
-  to   { opacity: 1}
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
 }
-*/
-*/
 
-
-
-
+*/ */
