@@ -108,7 +108,7 @@ body {
     font-size: 1rem;
     text-align: center;
     animation: MoveUpDown 1s linear infinite;
-  position: absolute;
+    position: absolute;
 }
 
 .scrollbutton {
@@ -116,12 +116,15 @@ body {
 }
 
 @keyframes MoveUpDown {
-  0%, 100% {
-    bottom: 0;
-  }
-  50% {
-    bottom: 10px;
-  }
+
+    0%,
+    100% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: 10px;
+    }
 }
 
 .indexMain {
@@ -846,7 +849,8 @@ footer {
     .modalcontent {
         width: 40vw;
         height: inherit;
-        max-height: 400px; /*idk i missed something*/
+        max-height: 400px;
+        /*idk i missed something*/
         padding-left: 2em;
         max-width: 1000px;
     }
