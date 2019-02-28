@@ -288,8 +288,9 @@ article .area {
 }
 
 .modaldescription {
+    font-family: "Cormorant Garamond", sans-serif;
     padding: 1rem 0 0 0;
-    font-size: .8rem;
+    font-size: 1em;
     line-height: 1.6rem;
 }
 
@@ -323,6 +324,7 @@ article .ratingImage {
 
 .specs p {
     font-family: "Roboto Condensed", serif;
+    font-style: normal;
     font-weight: 100;
 }
 
@@ -357,6 +359,7 @@ article .ratingImage {
     padding: 20px;
     border: 1px solid #888;
     width: 70vw;
+    border-radius: 5px;
 }
 
 .close {
@@ -571,6 +574,7 @@ footer {
     .modalcontent {
         /*        width: 50%;*/
         width: 60vw;
+        max-width: 480px;
 
     }
 
@@ -581,7 +585,6 @@ footer {
 
     .modalwineimg {
         display: block;
-        max-height: 25vh;
         float: right;
         height: 14rem;
     }
@@ -627,6 +630,8 @@ footer {
     .modalratingimg {
         /*        width: 40%;*/
     }
+
+
 
     .specs {
         float: right;
@@ -838,13 +843,16 @@ footer {
     }
 
     .modalcontent {
-        width: 60vw;
+        width: 40vw;
+        height: 40vh;
+        padding-left: 2em;
+        max-width: 1000px;
     }
 
     .modalname {
         font-size: 1.4rem;
         font-weight: 400;
-        margin-top: 5px;
+        margin-top: 1rem;
     }
 
     article .wineHouse {
@@ -874,6 +882,9 @@ footer {
 
     .modaldescription {
         font-size: 1.0rem;
+        width: 70%;
+        line-height: 2em;
+        margin-bottom: 3em;
     }
 
     article .rating {
@@ -890,8 +901,8 @@ footer {
         width: 30%;
     }
 
-    .modalratingimg {
-        /*        width: 30%;*/
+    .modalwineimg {
+        height: 90%;
     }
 
     /* DESKTOP WINE PAGE ENDS HERE*/
@@ -997,6 +1008,7 @@ footer {
     border: none;
     text-decoration: none;
     padding: 1em;
+    border-radius: 10px;
 }
 
 .wineWrapper:hover {
