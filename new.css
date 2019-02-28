@@ -844,7 +844,8 @@ footer {
 
     .modalcontent {
         width: 40vw;
-        height: 40vh;
+        height: inherit;
+        max-height: 350px;
         padding-left: 2em;
         max-width: 1000px;
     }
